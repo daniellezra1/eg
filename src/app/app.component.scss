@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Assistant-Light;
+    src: url(../assets/fonts/Assistant/static/Assistant-Light.ttf);
+  }
+
+  @font-face {
+    font-family: Assistant-Regular;
+    src: url(../assets/fonts/Assistant/static/Assistant-Regular.ttf);
+  }
+
+  * {
+      font-family: Assistant-Regular;
+  }

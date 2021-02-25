@@ -1,0 +1,13 @@
+<main class="projects">
+    <h5 class="title">פרויקטים</h5>
+    <div class="cards" *ngIf="projects">
+        <div *ngFor="let project of projects; index as i">
+            <div class="card bg-dark text-white mb-3" (click)="goToProject(project.id)">
+                <img [src]="project.pictures[0]" class="card-img" [alt]="project.name"/>
+                <div class="card-img-overlay">
+                    <div class="card-title">{{project.name}} | {{project.location}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

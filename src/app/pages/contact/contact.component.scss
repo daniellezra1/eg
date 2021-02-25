@@ -1,0 +1,12 @@
+.contact {
+    min-height: calc(100vh - 150px);
+    color: black;
+    font-family: Assistant-Regular;
+    text-align: center;
+    padding: 130px 6% 50px;
+    background-color: rgb(153, 153, 153);
+    direction: rtl;
+    .contact-title {
+        font-size: 2rem;
+    }
+}

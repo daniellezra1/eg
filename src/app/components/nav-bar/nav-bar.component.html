@@ -1,0 +1,16 @@
+<nav id="nav-bar" (scroll)="onWindowScroll()">
+    <div class="logo">
+        <div><a href=""><img src='/assets/logo/logo1.png'/></a></div>
+        <a class="phone" href="tel:0524281071">052-428-1071<fa-icon class="phone-icon" [icon]="faPhone"></fa-icon></a>
+    </div>
+    <button (click)="displayMenu()" class="hamburger"><fa-icon [icon]="faBars"></fa-icon></button>
+    <ul class="links" [ngClass]="{'open': isMenuOpen}">
+        <li class="phone-mobile-menu"><a href="tel:0524281071"><fa-icon class="phone-icon" [icon]="faPhone"></fa-icon>052-428-1071</a></li>
+
+        <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">דף הבית</a></li>
+        <li><a routerLink="/about" routerLinkActive="active-link">אודות</a></li>
+        <li><a routerLink="/projects" routerLinkActive="active-link">פרויקטים</a></li>
+        <!-- <li><a routerLink="/press" routerLinkActive="active-link">מאמרים</a></li> -->
+        <li><a routerLink="/contact" routerLinkActive="active-link">צור קשר</a></li>
+    </ul>
+</nav>

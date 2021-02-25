@@ -1,0 +1,26 @@
+.homepage-about {
+    color: white;
+    font-family: Assistant-Regular;
+    text-align: center;
+    padding: 50px 6%;
+    .about-title {
+        font-size: 2rem;
+    }
+    ul {
+        font-family: Assistant-Light;
+        font-size: 1.2rem;
+        list-style: none;
+        padding: 25px 0;
+    }
+    button {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .homepage-about {
+        background-color: rgb(102, 102, 102);
+        margin-top: 60px;
+    }
+  }

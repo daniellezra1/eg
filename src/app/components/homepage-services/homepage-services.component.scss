@@ -1,0 +1,40 @@
+.homepage-services {
+    font-family: Assistant-Regular;
+    text-align: center;
+    padding: 50px 6%;
+    background-color: rgb(219, 219, 219);
+    .title {
+        padding-bottom: 10px;
+        font-size: 2rem;
+    }
+    .cards {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 25px 0;
+        .card {
+            width: 300px;
+            height: 220px;
+            .card-title {
+                font-family: Assistant-Regular;
+                font-size: 1.5rem;
+            }
+            .card-text {
+                font-family: Assistant-Light;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homepage-services {
+        .cards {
+            flex-direction: column;
+        }
+    }
+  }

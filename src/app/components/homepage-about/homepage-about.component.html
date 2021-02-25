@@ -1,0 +1,5 @@
+<main class="homepage-about">
+    <h5 class="about-title">{{about.title}}</h5>
+    <ul><li *ngFor="let text of about.shortText">{{text}}</li></ul>
+    <button type="button" (click)="goToAboutPage()" class="btn-dark" ngbButtonLabel>קרא עוד</button>
+</main>

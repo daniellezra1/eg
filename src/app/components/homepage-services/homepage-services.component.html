@@ -1,0 +1,9 @@
+<main class="homepage-services">
+    <h5 class="title">השירותים שלנו</h5>
+    <div class="cards">
+        <div class="card bg-light mb-3" *ngFor="let service of about.services; index as i">
+            <div class="card-title card-header"><fa-icon [icon]="icons[i]"></fa-icon> {{service.title}}</div>
+            <div class="card-text card-body">{{service.text}}</div>
+        </div>
+    </div>
+</main>

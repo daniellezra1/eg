@@ -1,0 +1,20 @@
+<main class="homepage-main">
+  <ngbd-carousel-basic></ngbd-carousel-basic>
+  <div class="homepage-main-text">
+    <div>
+      <h1>א.ג משפצים ובונים</h1>
+      <h2>חייגו עכשיו: 052-428-1071</h2>
+      <h2>או השאירו פרטים ונחזור אליכם בהקדם</h2>
+    </div>
+    <form class="form-box" (submit)="submitForm(); $event.preventDefault()">
+      <div *ngIf="!isSubmited; else mailSubmited" class="row">
+        <input type="text" placeholder="שם" class="form-control"/>
+        <input type="tel" placeholder="טלפון" class="form-control"/>
+        <button type="submit" class="btn btn-light" ngbButtonLabel>שליחה</button>
+     </div>
+     <ng-template class="form-box" #mailSubmited>
+       קיבלנו את פנייתך, תודה!
+     </ng-template>
+    </form>
+  </div>
+</main>

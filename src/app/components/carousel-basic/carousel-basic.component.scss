@@ -1,0 +1,21 @@
+.carousel {
+    width: 100%;
+    margin: auto;
+    &:focus {
+        outline: 0 none;
+    }
+    img {
+       opacity: 0.6;
+       width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel {
+        padding-top: 90px;
+        padding-top: 90px;
+        img {
+            height: 220px;
+        }
+    }
+  }

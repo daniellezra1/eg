@@ -1,0 +1,77 @@
+.homepage-main {
+    text-align: center;
+    position: relative;
+    .homepage-main-text {
+        font-family: Assistant-Regular;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: -1px 0px 8px rgba(0, 0, 0, 0.81);
+        color: white;
+        .form-box {
+            height: 50px;
+            font-size: 1.5rem;
+            color: black;
+            .form-control {
+                width: 280px !important;
+                background-color: rgba(255, 255, 255, 0.3);
+                margin: 5px !important;
+            }
+            .btn {
+                height: 38px;
+                margin: 5px;
+            }
+            textarea:focus,
+            input[type="text"]:focus,
+            input[type="number"]:focus,
+            input[type="tel"]:focus,
+            .uneditable-input:focus {   
+                border-color: rgba(255, 255, 255, 0.8);
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);
+                outline: 0 none;
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homepage-main {
+        height: 500px;
+        ngbd-carousel-basic {
+            ngb-carousel {
+                a.carousel-control-prev,
+                a.carousel-control-next {
+                    top: 90px !important;
+                }
+            }
+        }
+        .homepage-main-text {
+            position: relative !important;
+            top: 80px !important;
+            padding-top: 10px;
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            .form-box {
+                font-size: 1rem;
+                .row {
+                    width: 300px !important;
+                    margin: auto;
+                }
+                .form-control {
+                    height: 30px;
+                    width: 300px !important;
+                }
+                .btn {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+    }
+  }

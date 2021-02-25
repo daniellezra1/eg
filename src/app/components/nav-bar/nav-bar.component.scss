@@ -1,0 +1,128 @@
+#nav-bar {
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(88,88,88,0.6);
+    padding: 10px 6%;
+    font-size: 1.2rem;
+    .hamburger {
+        display: none;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        img {
+            height: 150px;
+        }
+        a.phone,
+        a.phone:active,
+        a.phone:visited,
+        a.phone:link {
+            padding-left: 20px;
+            color: white;
+            .phone-icon {
+                padding: 0 5px;
+            }
+        }
+    }
+    ul.links {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 400px;
+        list-style: none;
+        color: white;
+        margin: 0;
+        a:active,
+        a:link,
+        a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover,
+        a.active-link {
+            color: white;
+            padding-bottom: 3px;
+            border-bottom: 3px solid white;
+            cursor: pointer;
+        }
+        li.phone-mobile-menu {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #nav-bar {
+        background-color: rgb(88,88,88) !important;
+        box-shadow: 0px -1px 12px -2px rgba(0,0,0,0.75) !important;
+        .hamburger {
+            color: white;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 1.8rem;
+            display: inline-block;
+            position: fixed;
+            top: 25px;
+            right: 20px;
+            z-index: 100;
+        }
+        .phone {
+            display: none;
+        }
+        ul.links {
+            position: fixed;
+            z-index: 50;
+            height: 100vh;
+            background-color: rgb(88,88,88);
+            top: 0;
+            right: 0;
+            padding: 0;
+            width: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            flex-direction: column;
+            justify-content: flex-start;
+            box-shadow: -9px 16px 22px -12px rgba(0,0,0,0.75); 
+            li {
+                opacity: 0;
+                margin: 15px 0;
+            }
+            li.phone-mobile-menu {
+                display: inline-block;
+                opacity: 0;
+                margin: 15px 0;
+                .phone-icon {
+                    padding: 0 5px;
+                }
+                a:hover,
+                a.active-link {
+                    border-bottom: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        ul.links.open {
+            width: 250px;
+            transition: 0.5s;
+            padding-top: 80px;
+            padding-right: 50px;
+            text-align: right;
+            transition: 0.9;
+            li {
+                opacity: 1;
+                transition: 1s;
+                &.phone-mobile-menu {
+                    opacity: 1;
+                    transition: 1s;
+                }
+            }
+        }
+
+    }
+  }

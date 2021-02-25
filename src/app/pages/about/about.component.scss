@@ -1,0 +1,27 @@
+.about-page {
+    min-height: calc(100vh - 150px);
+
+    .about {
+        color: black;
+        font-family: Assistant-Regular;
+        text-align: center;
+        padding: 130px 6% 50px;
+        background-color: rgb(153, 153, 153);
+        direction: rtl;
+
+        .about-title {
+            font-size: 2rem;
+        }
+        ul {
+            font-family: Assistant-Light;
+            font-size: 1.2rem;
+            list-style: none;
+            padding: 25px 0;
+            max-width: 1000px;
+            margin: auto;
+        }
+        button {
+            font-size: 1.2rem;
+        }
+    }
+}

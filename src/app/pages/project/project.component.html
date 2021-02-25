@@ -1,0 +1,12 @@
+<main class="project">
+    <h5 class="title">{{project.name}} | {{project.location}}</h5>
+    <div *ngFor="let text of project.text">{{text}}</div>
+    <div>ארכיטקט: {{project.arcitecture}}</div>
+    <div class="gallery">
+        <ng-tempalate *ngFor="let img of project.pictures; index as i" >
+            <img [src]="img" (click)="showGallery(i)" />
+
+        </ng-tempalate>
+    </div>
+    
+</main>

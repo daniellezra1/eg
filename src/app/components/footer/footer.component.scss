@@ -1,0 +1,45 @@
+footer {
+    background-color: rgb(88,88,88);
+    .contact {
+        color: white;
+        display: flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        align-content: center;
+        width: 400px;
+        margin: auto;
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            a,
+            a:active,
+            a:visited,
+            a:link {
+                color: white;
+                padding-bottom: 7px;
+                fa-icon {
+                    padding: 5px;
+                    &.facebook {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        .contact {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            width: 200px;
+            text-align: center;
+            padding-top: 40px;
+        }
+    }
+  }

@@ -1,0 +1,14 @@
+<main class="homepage-projects">
+    <h5 class="title">פרויקטים נבחרים</h5>
+    <div class="cards" *ngIf="projects">
+        <div *ngFor="let project of projects; index as i">
+            <div *ngIf="i < 6" class="card bg-dark text-white mb-3" (click)="goToProject(project.id)">
+                <img [src]="project.pictures[0]" class="card-img" [alt]="project.name"/>
+                <div class="card-img-overlay">
+                    <div class="card-title">{{project.name}} | {{project.location}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn-dark" ngbButtonLabel (click)="goToProjects()">פרויקטים נוספים</button>
+</main>
